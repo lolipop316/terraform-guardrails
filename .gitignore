@@ -1,9 +1,40 @@
-# Terraform
+# === Terraform Essentials ===
 .terraform/
+.terraform.lock.hcl
 *.tfstate
 *.tfstate.backup
-.terraform.lock.hcl
 crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# === Sensitive or Temporary Files ===
 *.zip
+*.tar.gz
 *.bak
 *.log
+*.tmp
+*.swp
+*.env
+*.DS_Store
+test.txt
+
+# === Python / Parser Labs (future) ===
+__pycache__/
+*.pyc
+*.pyo
+*.pytest_cache/
+
+# === OS and Editor Junk ===
+*.sublime-workspace
+*.sublime-project
+*.vscode/
+.idea/
+*.code-workspace
+
+# === Backup Repos and Cache ===
+*~
+*.bak
+*.orig
+*.rej
