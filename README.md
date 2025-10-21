@@ -29,15 +29,15 @@ Apply complete! Resources: 3 added, 0 changed, 0 destroyed.
 ## Proof of Work
 
 **Terraform Apply**
-![Terraform Apply Output](./screenshots/terraform_apply_output.png)  
+![Terraform Apply Output](./screeshots/terraform_apply_output.png)  
 Terraform created 3 resources: random ID, S3 bucket, and deny-unencrypted policy.
 
 **Access Denied (Unencrypted Upload)**
-![Access Denied](./screenshots/s3_upload_error.png)  
+![Access Denied](./screeshots/s3_upload_error.png)  
 Upload blocked - unencrypted file rejected by the bucket guardrail.
 
 **Encrypted Upload Success**
-![Encrypted Upload Success](./screenshots/s3_upload_success.png)  
+![Encrypted Upload Success](./screeshots/s3_upload_success.png)  
 Upload passed - encryption header `--sse AES256` satisfied the policy.
 
 ## Reflection
